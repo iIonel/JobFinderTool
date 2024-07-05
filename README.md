@@ -32,15 +32,14 @@ Before running the application, ensure you have the following installed:
 
 Open src/main/resources/application.properties and configure the following properties:
 
-### Database connection properties
+2.1. **Database connection properties**
 
 ```bash
 spring.datasource.url=jdbc:h2:mem:jobs
 spring.datasource.username=sa
 spring.datasource.password=
 ```
-
-### Base URL for job search
+2.2. **Base URL for job search**
 
 ```bash
 job.base.url=https://www.juniors.ro/jobs?q=
