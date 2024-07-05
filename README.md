@@ -32,13 +32,19 @@ Before running the application, ensure you have the following installed:
 
 Open src/main/resources/application.properties and configure the following properties:
 
-# Database connection properties
+### Database connection properties
+
+```bash
 spring.datasource.url=jdbc:h2:mem:jobs
 spring.datasource.username=sa
 spring.datasource.password=
+```
 
-# Base URL for job search
+### Base URL for job search
+
+```bash
 job.base.url=https://www.juniors.ro/jobs?q=
+```
 
 3. **Build the application:**
 
@@ -57,7 +63,7 @@ java -jar target/job-scraper-1.0.jar
 - **CSV Export:** Job data will be exported to notification.csv.
 - **Database:** All scraped job listings are stored in the configured H2 database.
 
-# Custom Query
+## Custom Query
 To search for jobs based on specific criteria:
 
 Open NotificationService.java and modify the fetchJobsFromWeb(String keyword) method to include your search criteria.
