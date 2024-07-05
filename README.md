@@ -16,7 +16,7 @@ Before running the application, ensure you have the following installed:
 
 - Java Development Kit (JDK) version 8 or later
 - Apache Maven
-- H2 database server
+- H2 database 
 - Git (optional, for cloning the repository)
 
 ## Setup
@@ -53,9 +53,9 @@ java -jar target/job-scraper-1.0.jar
 ```
 
 ## Usage
-Automatic Job Scraping: The application will automatically scrape job listings from juniors.ro every 10 minutes (adjustable in NotificationService).
-CSV Export: Job data will be exported to notification.csv.
-Database: All scraped job listings are stored in the configured H2 database.
+- **Automatic Job Scraping:** The application will automatically scrape job listings from juniors.ro every 10 minutes (adjustable in NotificationService).
+- **CSV Export:** Job data will be exported to notification.csv.
+- **Database:** All scraped job listings are stored in the configured H2 database.
 
 # Custom Query
 To search for jobs based on specific criteria:
